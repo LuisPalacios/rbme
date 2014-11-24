@@ -1,6 +1,12 @@
 RSYNC BACKUP MADE EASY
 
-About
+Based on original project from https://github.com/schlomo/rbme
+This version add's translation to Spanish and few additional features.
+
+(NOTE: Still work in progress)
+
+
+Acerca de
 -------------------------------------
 
 Using rsync for backups is becoming more and more popular on UNIX/Linux 
@@ -25,6 +31,11 @@ suitable script (that would manage the backup space and also watch the inodes)
 when I needed it. The other reason is of course the fact that studying another 
 script would take at least the same time as writing my own and in such cases I 
 tend to write my own.
+
+Novedades
+---------
+Soporte de , vs . en printf
+Soporte de hh-mm-ss en nombre directorios
 
 
 Usage
