@@ -399,7 +399,7 @@ fi
 
 # the definition of today should not change during the runtime of RBME since otherwise the 
 # removal of old backups WILL FAIL if the day changes during the run-time of the script.
-today="$(date "+%Y-%m-%d")"
+today="$(date "+%Y-%m-%d_%H-%M-%S")"
 
 # run some tests before starting to do anything useful
 	
@@ -704,7 +704,7 @@ test "$STATISTICS" && {
 	let c-- # undo last c++
 	for k in $(seq 0 $c) ; do
 		let perc="10000*history[k]/total"
-		printf "%10s%10.2f   %s\n" ${history[k]} $((perc/100)).$((perc%100)) ${dirs[k]}
+		printf "%10s%10.2f   %s\n" ${history[k]} $((perc/100)),$((perc%100)) ${dirs[k]}
 	done
 } | output
 
